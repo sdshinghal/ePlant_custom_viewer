@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(255, 255, 255);
@@ -20,10 +20,19 @@ body {
   min-height: 100% !important;
   display: flex !important;
   flex-direction: column !important;
+  background-color:#727272
+}
+
+#header {
+  background-color: rgb(43, 43, 43);
+}
+
+#dropDiv {
+  height: 400px;
 }
 
 .MuiPaper-root {
-  background-color: white !important;
+  background-color: #619b10 !important;
   color: black !important;
   text-align: center;
   font-family: sans-serif;
@@ -34,7 +43,7 @@ body {
 
 #dropZone {
   font-family: sans-serif;
-  background-color: rgb(135, 182, 182);
+  background-color: white;
   font-size: 36px;
   padding: 20px;
   flex: 1;
@@ -45,11 +54,18 @@ body {
 .MuiTabs-root {
   background-color: rgb(152, 167, 126);
   margin: 5px;
+  display: flex;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  monospace;
+}
+
+h1 {
+  text-align: left;
+  color: #68a016;
+  margin: 10px;
 }
 
 p {
