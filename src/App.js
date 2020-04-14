@@ -19,7 +19,7 @@ export default class App extends Component {
                     <h1 >ePlant Custom SVG Tool</h1>
                 </div>
                 <div id="dropDiv">
-                    <Drop id="dropZone">
+                    <Drop id="dropZone" style={{position: "flex"}}>
                         <Drag id="dropDragZone"></Drag>
                     </Drop>
                 </div>
