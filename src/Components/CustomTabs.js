@@ -64,137 +64,243 @@ export default class CustomTabs extends Component {
     list: []
   };
 
+    list1 = {
+        one: (
+            <svg width="100" height="100">
+                <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    stroke="green"
+                    strokeWidth="4"
+                    fill="yellow"
+                />
+            </svg>
+        ),
+        two: (
+            <svg width="100" height="100">
+                <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    stroke="green"
+                    strokeWidth="4"
+                    fill="red"
+                />
+            </svg>
+        )
+    };
 
+    list2 = {
+        one: (
+            <svg width="100" height="100">
+                <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    stroke="green"
+                    strokeWidth="4"
+                    fill="yellow"
+                />
+            </svg>
+        ),
+        two: (
+            <svg width="100" height="100">
+                <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    stroke="green"
+                    strokeWidth="4"
+                    fill="red"
+                />
+            </svg>
+        )
+    };
 
-  list1 = {
-    one: (
-          <Media>
-            <Media object id="data" src={GerminatingSeed} style={{width:"100px", height:"100px"}}/>
-          </Media>
+    list3 = {
+        one: (
+            <svg width="100" height="100">
+                <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    stroke="green"
+                    strokeWidth="4"
+                    fill="yellow"
+                />
+            </svg>
+        ),
+        two: (
+            <svg width="100" height="100">
+                <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    stroke="green"
+                    strokeWidth="4"
+                    fill="red"
+                />
+            </svg>
+        )
+    };
 
-    ),
-    two: (
-        <Media>
-          <Media object id="data" src={SeedStage1_4} style={{width:"100px", height:"100px"}}/>
-        </Media>
-    ),
-    three: (
-        <Media>
-          <Media object id="data" src={SeedStage5_7} style={{width:"100px", height:"100px"}}/>
-        </Media>
-    ),
-    four: (
-        <Media>
-          <Media object id="data" src={SeedStage8} style={{width:"100px", height:"100px"}}/>
-        </Media>
-    ),
-    five: (
-        <Media>
-          <Media object id="data" src={SiliqueStage1_5} style={{width:"100px", height:"100px"}}/>
-        </Media>
-    ),
-    six: (
-        <Media>
-          <Media object id="data" src={SiliqueStage6_10} style={{width:"100px", height:"100px"}}/>
-        </Media>
-    )
-  };
+    list4 = {
+        one: (
+            <svg width="100" height="100">
+                <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    stroke="green"
+                    strokeWidth="4"
+                    fill="yellow"
+                />
+            </svg>
+        ),
+        two: (
+            <svg width="100" height="100">
+                <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    stroke="green"
+                    strokeWidth="4"
+                    fill="red"
+                />
+            </svg>
+        )
+    };
 
-  list2 = {
-      one: (
-          <Media>
-              <Media object id="data" src={Flower} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      ),
-      two: (
-          <Media>
-              <Media object id="data" src={FlowerParts} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      ),
-      three: (
-          <Media>
-              <Media object id="data" src={Stage1Flowers} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      ),
-      four: (
-          <Media>
-              <Media object id="data" src={Stage12Buds} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      )
-  };
+  // list1 = {
+  //   one: (
+  //         <Media>
+  //           <Media object id="data" src={GerminatingSeed} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //
+  //   ),
+  //   two: (
+  //       <Media>
+  //         <Media object id="data" src={SeedStage1_4} style={{width:"100px", height:"100px"}}/>
+  //       </Media>
+  //   ),
+  //   three: (
+  //       <Media>
+  //         <Media object id="data" src={SeedStage5_7} style={{width:"100px", height:"100px"}}/>
+  //       </Media>
+  //   ),
+  //   four: (
+  //       <Media>
+  //         <Media object id="data" src={SeedStage8} style={{width:"100px", height:"100px"}}/>
+  //       </Media>
+  //   ),
+  //   five: (
+  //       <Media>
+  //         <Media object id="data" src={SiliqueStage1_5} style={{width:"100px", height:"100px"}}/>
+  //       </Media>
+  //   ),
+  //   six: (
+  //       <Media>
+  //         <Media object id="data" src={SiliqueStage6_10} style={{width:"100px", height:"100px"}}/>
+  //       </Media>
+  //   )
+  // };
 
-  list3 = {
-      one: (
-          <Media>
-              <Media object id="data" src={tendayOldSeedling} style={{width:"100px", height:"100px"}}/>
-          </Media>
+  // list2 = {
+  //     one: (
+  //         <Media>
+  //{/*            <Media object id="data" src={Flower} style={{width:"100px", height:"100px"}}/>*/}
+  //{/*        </Media>*/}
+  //{/*    ),*/}
+  //{/*    two: (*/}
+  //{/*        <Media>*/}
+  //{/*            <Media object id="data" src={FlowerParts} style={{width:"100px", height:"100px"}}/>*/}
+  //         </Media>
+  //     ),
+  //     three: (
+  //         <Media>
+  //             <Media object id="data" src={Stage1Flowers} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     ),
+  //     four: (
+  //         <Media>
+  //             <Media object id="data" src={Stage12Buds} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     )
+  // };
 
-      ),
-      two: (
-          <Media>
-              <Media object id="data" src={fifteendayOldSeedling} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      ),
-      three: (
-          <Media>
-              <Media object id="data" src={etiolatedSeedling} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      ),
-      four: (
-          <Media>
-              <Media object id="data" src={RosettePlusRoot} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      ),
-      five: (
-          <Media>
-              <Media object id="data" src={youngSeedling} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      )
-  };
+  // list3 = {
+  //     one: (
+  //         <Media>
+  //             <Media object id="data" src={tendayOldSeedling} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //
+  //     ),
+  //     two: (
+  //         <Media>
+  //             <Media object id="data" src={fifteendayOldSeedling} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     ),
+  //     three: (
+  //         <Media>
+  //             <Media object id="data" src={etiolatedSeedling} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     ),
+  //     four: (
+  //         <Media>
+  //             <Media object id="data" src={RosettePlusRoot} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     ),
+  //     five: (
+  //         <Media>
+  //             <Media object id="data" src={youngSeedling} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     )
+  // };
 
-  list4 = {
-      one: (
-          <Media>
-              <Media object id="data" src={Internode} style={{width:"100px", height:"100px"}}/>
-          </Media>
-
-      ),
-      two: (
-          <Media>
-              <Media object id="data" src={Pollen} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      ),
-      three: (
-          <Media>
-              <Media object id="data" src={RootTip} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      ),
-      four: (
-          <Media>
-              <Media object id="data" src={StigmaAndOvaries} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      ),
-      five: (
-          <Media>
-              <Media object id="data" src={Stamen} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      ),
-      six: (
-          <Media>
-              <Media object id="data" src={Leaf} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      ),
-      seven: (
-          <Media>
-              <Media object id="data" src={LeafParts} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      ),
-      eight: (
-          <Media>
-              <Media object id="data" src={SenescentLeaf} style={{width:"100px", height:"100px"}}/>
-          </Media>
-      )
-  };
+  // list4 = {
+  //     one: (
+  //         <Media>
+  //             <Media object id="data" src={Internode} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //
+  //     ),
+  //     two: (
+  //         <Media>
+  //             <Media object id="data" src={Pollen} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     ),
+  //     three: (
+  //         <Media>
+  //             <Media object id="data" src={RootTip} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     ),
+  //     four: (
+  //         <Media>
+  //             <Media object id="data" src={StigmaAndOvaries} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     ),
+  //     five: (
+  //         <Media>
+  //             <Media object id="data" src={Stamen} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     ),
+  //     six: (
+  //         <Media>
+  //             <Media object id="data" src={Leaf} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     ),
+  //     seven: (
+  //         <Media>
+  //             <Media object id="data" src={LeafParts} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     ),
+  //     eight: (
+  //         <Media>
+  //             <Media object id="data" src={SenescentLeaf} style={{width:"100px", height:"100px"}}/>
+  //         </Media>
+  //     )
+  // };
 
   handleChange = (event, value) => {
     this.setState({ value });

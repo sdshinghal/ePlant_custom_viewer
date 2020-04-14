@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Form, FormGroup, FormText, Label, Input, Button, Modal, ModalBody } from 'reactstrap';
+import FileUpload from './FileUpload'
 
 
 class FormPopUp extends React.Component {
@@ -22,17 +23,40 @@ class FormPopUp extends React.Component {
         return (
 
             <div>
-                <Button onClick={this.toggle}>Submit SVG</Button>
-                <Modal isOpen={this.state.modal} toggle={this.toggle}>
-                    <ModalBody>
-                        <SpeciminInfo/>
-                    </ModalBody>
-                </Modal>
+                <Row style={{margin: "5px"}}>
+                    <Col md="4">
+                        <Form>
+                            <FormGroup>
+                                <Input type="textarea" name="text"/>
+                            </FormGroup>
+                        </Form>
+                    </Col>
+                    <Col md="1">
+                        <Button>Add Text</Button>
+                    </Col>
+
+                    <Col md="4">
+                        <Button color="danger">Delete</Button>
+                        {/*TODO: Currently not conncted to anything*/}
+                    </Col>
+                    <Col md="3">
+                        <Button onClick={this.toggle}>Upload Data</Button>
+                        <Modal isOpen={this.state.modal} toggle={this.toggle}>
+                            <ModalBody>
+                                <BamUploadForm/>
+                            </ModalBody>
+                        </Modal>
+                    </Col>
+                </Row>
+
+
             </div>
         )
     };
 }
 
+
+// Form to take in information about user
 class InfoForm extends React.Component {
     constructor(props) {
         super(props);
@@ -145,26 +169,13 @@ class InfoForm extends React.Component {
     }
 }
 
-
-class SpeciminInfo extends React.Component {
+// Form for uploading BAM files
+class BamUploadForm extends React.Component {
 
 
     render() {
         return (
             <Form>
-                {/*<FormGroup>*/}
-                {/*    <legend>Form 1</legend>*/}
-                {/*    <Row>*/}
-                {/*        <Col sm={{size:"5", offset: 1}}>*/}
-                {/*            <Label for="ID">ID: </Label>*/}
-                {/*            <Input type="text" name="id" id="ID" placeholder="Enter ID Number"/>*/}
-                {/*        </Col>*/}
-                {/*        <Col sm="5">*/}
-                {/*            <Label for="sampleName">Sample Name:</Label>*/}
-                {/*            <Input type="text" name="sample_name" id="sampleName" placeholder="Enter Sample Name"/>*/}
-                {/*        </Col>*/}
-                {/*    </Row>*/}
-                {/*</FormGroup>*/}
 
                 <legend> Metadata </legend>
                 <FormGroup>
@@ -199,7 +210,7 @@ class SpeciminInfo extends React.Component {
                     </Row>
                 </FormGroup>
 
-                {/*<legend>Form 3</legend>*/}
+
                 <FormText>Your information here:</FormText>
                 <FormGroup>
                     <Row>
@@ -212,11 +223,12 @@ class SpeciminInfo extends React.Component {
                             <Input type="email" name="emailAddress" id="email" placeholder="Enter Your Email"/>
                         </Col>
                     </Row>
+                </FormGroup>
+                <FormGroup>
+                    <FormText>Upload File:</FormText>
                     <Row>
                         <Col sm={{size:10, offset: 1}}>
-                            <Label for="fileLocus">File Location: </Label>
-                            <Input type="text" name="name" id="userName"
-                                   placeholder="Upload File with Corresponding Data"/>
+                            <FileUpload/>
                         </Col>
                     </Row>
                 </FormGroup>
@@ -235,6 +247,7 @@ class SpeciminInfo extends React.Component {
                         </Label>
                     </FormGroup>
                 </FormGroup>
+
                 <Button>Submit</Button>
 
             </Form>
